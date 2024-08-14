@@ -3,12 +3,12 @@
 This repository contains implementations of stock forecasting models and strategies in Python. The project is organized into two main folders:
 
 1. **Linear Regression Model Folder**
-   - `LinearRegression.py`: Contains the implementation of the linear and auto regression forecasting model with computed coefficient of determination of R². <br/>
+   - `LinearRegression.ipynb`: Contains the implementation of the linear and auto regression forecasting model with computed coefficient of determination of R². <br/>
 
       The Linear Regression (LR) model estimates regression coefficients to create a function that describes the relationship between input variables and the output. The goal is to make the predicted response as close as possible to the actual response for each observation. The differences between the actual and predicted values across all observations are called residuals. The model finds the optimal weights by minimizing the sum of the squared residuals for all observations, using a method known as ordinary least squares.
 
 2. **Autoregressive Integrated Moving Average Model Folder**
-   - `AutoRegression.py`: Contains the implementation of the ARIMA forecasting model outlined below:
+   - `ARIMA.ipynb`: Contains the implementation of the ARIMA forecasting model outlined below:
 
       The model begins with an ADF test to assess whether the time series data is stationary, meaning the statistical properties, such as mean and variance, remain constant over time. A p-value below 0.05 indicates that the series is stationary, leading to the rejection of the null hypothesis of a unit root. The script includes a function to perform the ADF test, visualize rolling statistics, and interpret the results. <br/>
 
